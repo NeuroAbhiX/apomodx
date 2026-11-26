@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    color: #f1f5f9;
+    background-color: #0f172a;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', Consolas, 'Courier New', monospace;
+  }
+}
+
+/* Professional Polish custom industrial scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b1120;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Pulse animation for RX/TX activity */
+@keyframes tx-rx-pulse {
+  0% { opacity: 1; transform: scale(1.1); }
+  50% { opacity: 0.7; transform: scale(0.95); }
+  100% { opacity: 0.2; transform: scale(1); }
+}
+
+.animate-comm-pulse {
+  animation: tx-rx-pulse 0.4s cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+/* Engineering Table Grid Lines */
+.eng-table-row:nth-child(even) {
+  background-color: rgba(30, 41, 59, 0.3);
+}
+
+.eng-table-row:hover {
+  background-color: rgba(37, 99, 235, 0.08);
+}
+
+

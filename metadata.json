@@ -1,0 +1,6 @@
+{
+  "name": "APOMODX",
+  "description": "Industrial-grade Modbus RTU/TCP engineering, scanning, live polling, passive traffic learning, and diagnostic platform for automation engineers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
